@@ -12,15 +12,16 @@ import javax.swing.SwingConstants;
 
 public class JogoDos8 implements ActionListener{
     private JFrame windown = new JFrame("Jogo dos 8");
+
     public JButton bt1 = new JButton("1");
     public JButton bt2 = new JButton("2");
     public JButton bt3 = new JButton("3");
-    public JButton bt4 = new JButton("");
+    public JButton bt4 = new JButton("4");
     public JButton bt5 = new JButton("5");
     public JButton bt6 = new JButton("6");
     public JButton bt7 = new JButton("7");
     public JButton bt8 = new JButton("8"); 
-    public JButton bt9 = new JButton("9");
+    public JButton bt9 = new JButton("");
     
     private Container container;
     private String aux;
@@ -71,6 +72,7 @@ public class JogoDos8 implements ActionListener{
         bt8.addActionListener(this);
         bt9.addActionListener(this);
     }
+
     private void Troca(JButton b1,JButton b2){
         aux=b1.getText();
         b1.setText(b2.getText());
@@ -154,7 +156,6 @@ public class JogoDos8 implements ActionListener{
                 Troca(bt8, bt9);
             }
         }
-
-        
+  
     }
 }
