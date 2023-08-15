@@ -8,17 +8,19 @@ import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 
+
+
 public class JogoDos8 implements ActionListener{
     private JFrame windown = new JFrame("Jogo dos 8");
-    private JButton bt1 = new JButton("1");
-    private JButton bt2 = new JButton("2");
-    private JButton bt3 = new JButton("3");
-    private JButton bt4 = new JButton("");
-    private JButton bt5 = new JButton("5");
-    private JButton bt6 = new JButton("6");
-    private JButton bt7 = new JButton("7");
-    private JButton bt8 = new JButton("8"); 
-    private JButton bt9 = new JButton("9");
+    public JButton bt1 = new JButton("1");
+    public JButton bt2 = new JButton("2");
+    public JButton bt3 = new JButton("3");
+    public JButton bt4 = new JButton("");
+    public JButton bt5 = new JButton("5");
+    public JButton bt6 = new JButton("6");
+    public JButton bt7 = new JButton("7");
+    public JButton bt8 = new JButton("8"); 
+    public JButton bt9 = new JButton("9");
     
     private Container container;
     private String aux;
@@ -82,28 +84,20 @@ public class JogoDos8 implements ActionListener{
                 Troca(bt2, bt1);
             }else if(bt4.getText()==""){
                 Troca(bt4, bt1);
-            }else if(bt5.getText()==""){
-                Troca(bt5, bt1);
             }
         }
         if(e.getSource() == bt2){
             if(bt1.getText()==""){
                 Troca(bt1, bt2);
             }else if(bt3.getText()==""){
-                Troca(bt4, bt2);
-            }else if(bt4.getText()==""){
-                Troca(bt5, bt2);
+                Troca(bt3, bt2);
             }else if(bt5.getText()==""){
-                Troca(bt5, bt2);
-            }else if(bt6.getText()==""){
                 Troca(bt5, bt2);
             }
         }
         if(e.getSource() == bt3){
             if(bt2.getText()==""){
                 Troca(bt2, bt3);
-            }else if(bt5.getText()==""){
-                Troca(bt5, bt3);
             }else if(bt6.getText()==""){
                 Troca(bt6, bt3);
             }
@@ -111,44 +105,28 @@ public class JogoDos8 implements ActionListener{
         if(e.getSource() == bt4){
             if(bt1.getText()==""){
                 Troca(bt1, bt4);
-            }else if(bt2.getText()==""){
-                Troca(bt2, bt4);
             }else if(bt5.getText()==""){
                 Troca(bt5, bt4);
             }else if(bt7.getText()==""){
                 Troca(bt7, bt4);
-            }else if(bt8.getText()==""){
-                Troca(bt8, bt4);
             }
         }
         if(e.getSource() == bt5){
-            if(bt1.getText()==""){
-                Troca(bt1, bt5);
-            }else if(bt2.getText()==""){
+            if(bt2.getText()==""){
                 Troca(bt2, bt5);
-            }else if(bt3.getText()==""){
-                Troca(bt3, bt5);
             }else if(bt4.getText()==""){
                 Troca(bt4, bt5);
             }else if(bt6.getText()==""){
                 Troca(bt6, bt5);
-            }else if(bt7.getText()==""){
-                Troca(bt7, bt5);
             }else if(bt8.getText()==""){
                 Troca(bt8, bt5);
-            }else if(bt9.getText()==""){
-                Troca(bt9, bt5);
             }
         }
         if(e.getSource() == bt6){
-            if(bt2.getText()==""){
-                Troca(bt2, bt6);
-            }else if(bt3.getText()==""){
+            if(bt3.getText()==""){
                 Troca(bt3, bt6);
             }else if(bt5.getText()==""){
                 Troca(bt5, bt6);
-            }else if(bt8.getText()==""){
-                Troca(bt8, bt6);
             }else if(bt9.getText()==""){
                 Troca(bt9, bt6);
             }
@@ -156,19 +134,13 @@ public class JogoDos8 implements ActionListener{
         if(e.getSource() == bt7){
             if(bt4.getText()==""){
                 Troca(bt4, bt7);
-            }else if(bt5.getText()==""){
-                Troca(bt5, bt7);
             }else if(bt8.getText()==""){
                 Troca(bt8, bt7);
             }
         }
         if(e.getSource() == bt8){
-            if(bt4.getText()==""){
-                Troca(bt4, bt8);
-            }else if(bt5.getText()==""){
+            if(bt5.getText()==""){
                 Troca(bt5, bt8);
-            }else if(bt6.getText()==""){
-                Troca(bt6, bt8);
             }else if(bt7.getText()==""){
                 Troca(bt7, bt8);
             }else if(bt9.getText()==""){
@@ -176,9 +148,7 @@ public class JogoDos8 implements ActionListener{
             }
         }
         if(e.getSource() == bt9){
-            if(bt5.getText()==""){
-                Troca(bt5, bt9);
-            }else if(bt6.getText()==""){
+            if(bt6.getText()==""){
                 Troca(bt6, bt9);
             }else if(bt8.getText()==""){
                 Troca(bt8, bt9);
